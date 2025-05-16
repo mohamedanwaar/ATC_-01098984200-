@@ -32,7 +32,8 @@ The **Event Booking System** is a modern, responsive, and user-friendly web appl
 |--------------|------------------------------------------|
 | Backend      | Java, Spring Boot                        |
 | Frontend     | HTML5, CSS3, Bootstrap 5, Thymeleaf      |
-| Database     | MySql                                    |                  
+| JPA          | for database interaction                 |
+| Database     | MySql(as the underlying database)        |                  
 | Template     | Thymeleaf                                |
 | Build Tool   | Maven                                    |
 
@@ -100,11 +101,12 @@ Edit your `application.properties` file:
 spring.datasource.url=jdbc:mysql://localhost:3306/event_booking
 spring.datasource.username=<your-username>
 spring.datasource.password=<your-password>
+spring.jpa.hibernate.ddl-auto=update
 ```
 ### Running the Application
 ```bash
 # Clone the repository
-git clone https://github.com/mohamedanwaar/ATC_01098984200.git
+git clone https://github.com/your-username/event-booking-system.git
 
 # Navigate to the project directory
 cd event-booking-system
