@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+  <meta charset="UTF-8">
+  <title>Home</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+<body>
+
+</div>
+  <div class="container mt-5">
+    <h2>My Bookings</h2>
+    <table class="table table-striped">
+      <thead>
+        <tr>
+          <th>Event Name</th>
+          <th>Date</th>
+          <th>Location</th>
+          <th>Description</th>
+          <th>Price</th>
+          <th>Cancel</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr th:each="booking : ${bookings}">
+          <td th:text="${booking.event.eventName}">Event Name</td>
+            <td th:text="${booking.event.eventDate}">Event Date</td>
+            <td th:text="${booking.event.eventLocation}">Event Location</td>
+            <td th:text="${booking.event.eventDescription}">Event Description</td>
+            <td th:text="${booking.event.eventPrice}">Event Price</td>
+          <td>
+            <form th:action="@{/Bookings/cancle}" method="post">
+              <input type="hidden" name="bookingId" th:value="${booking.id}" />
+              <button type="submit" class="btn btn-danger">Cancel</button>
+            </form>
+          </td>
+        </tr>
+      </tbody>
+
+    </table>
+  </div>
+
+    <div class="container mt-4">
+        <button type="button" class="btn btn-primary" onclick="window.location.href='/home'">Back to Home</button>
+    </div>
+</body>
+</html>
