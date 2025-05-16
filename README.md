@@ -2,7 +2,7 @@
 # Event Booking System
 
 ## Overview
-The **Event Booking System** is a modern, responsive, and user-friendly web application developed using **Spring Boot** and **Thymeleaf**. It allows users to explore, book, and manage events while providing administrators with tools to manage the events.
+The **Event Booking System** is a modern, responsive, and user-friendly web application developed using Spring Boot, Thymeleaf, JPA, and MySQL. It allows users to explore, book, and manage events while providing administrators with tools to manage the events.
 
 ---
 
