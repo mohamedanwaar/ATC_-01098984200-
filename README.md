@@ -104,7 +104,7 @@ spring.datasource.password=<your-password>
 ### Running the Application
 ```bash
 # Clone the repository
-git clone https://github.com/your-username/event-booking-system.git
+git clone https://github.com/mohamedanwaar/ATC_01098984200.git
 
 # Navigate to the project directory
 cd event-booking-system
